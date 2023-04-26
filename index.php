@@ -24,8 +24,8 @@ class local_fonts {
             add_action( 'wp_enqueue_scripts', array($this,'fonts' ));
       }
       
-
       function fonts() {
+            // Generate correspond fonts.css by https://gwfh.mranftl.com/fonts
             wp_enqueue_style( 'fonts_css', plugins_url('/local-fonts-by-pe/fonts.css' ), array(), 1.0 , false);  
       }
 
